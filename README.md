@@ -24,13 +24,13 @@
 
 ## Descrição
 
-Desafio técnico envolvendo a criação de APIs Restful em Nest.js.
+Desafio técnico envolvendo a criação de APIs Restful em Nest.js. <br />
 Feito por [Paulo Nobre Junior](https://github.com/juniorcodexx)
 
 ## Instalação
 
-Certifique-se de possuir uma instalação de um banco MySQL operando;
-Caminho para configuração das credenciais do banco: 
+Certifique-se de possuir uma instalação de um banco MySQL operando; <br />
+Caminho para configuração das credenciais do banco: <br />
 
 ```bash
 src/database/database.providers.ts
@@ -56,18 +56,18 @@ $ npm run start:prod
 
 ## APIs
 
-- Veículos
+- Veículos 
 
-[GET]    /veiculo 		- Lista todos os veículos
-[GET] 	 /veiculo/:id 	- Busca um Veículo por id
-[POST] 	 /veiculo 		- Cria um Veículo
-[PATCH]  /veiculo/:id 	- Edita um Veículo
-[DELETE] /veiculo/:id	- Deleta um Veículo (e seu estoque)
+[GET]    /veiculo 		- Lista todos os veículos <br />
+[GET] 	 /veiculo/:id 	- Busca um Veículo por id <br />
+[POST] 	 /veiculo 		- Cria um Veículo <br />
+[PATCH]  /veiculo/:id 	- Edita um Veículo <br />
+[DELETE] /veiculo/:id	- Deleta um Veículo (e seu estoque) <br /> <br />
 
 - Categorias
 
-[GET] 	 /categorias 		- Lista todas as Categorias
-[GET] 	 /categorias/:id 	- Busca uma Categoria por id
-[POST] 	 /categorias 		- Cria uma Categoria
-[PATCH]  /categorias/:id 	- Edita uma Categoria
-[DELETE] /categorias/:id	- Deleta uma Categoria (deve atualizar o veiculo setando idCategoria como NULL para veiculos que utilizam essa categoria)
+[GET] 	 /categorias 		- Lista todas as Categorias <br />
+[GET] 	 /categorias/:id 	- Busca uma Categoria por id <br />
+[POST] 	 /categorias 		- Cria uma Categoria <br />
+[PATCH]  /categorias/:id 	- Edita uma Categoria <br />
+[DELETE] /categorias/:id	- Deleta uma Categoria (deve atualizar o veiculo setando idCategoria como NULL para veiculos que utilizam essa categoria) <br />
