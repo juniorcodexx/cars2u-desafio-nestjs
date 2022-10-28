@@ -5,7 +5,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+  <p align="center">Um framework <a href="http://nodejs.org" target="_blank">Node.js</a> progressivo para construção de aplicações server-side escaláveis e eficientes.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
@@ -22,52 +22,52 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+## Descrição
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Desafio técnico envolvendo a criação de APIs Restful em Nest.js.
+Feito por [Paulo Nobre Junior](https://github.com/juniorcodexx)
 
-## Installation
+## Instalação
 
+Certifique-se de possuir uma instalação de um banco MySQL operando;
+Caminho para configuração das credenciais do banco: 
+
+```bash
+src/database/database.providers.ts
+```
+
+Clone o repositório e execute: 
 ```bash
 $ npm install
 ```
 
-## Running the app
+## Iniciando a aplicação
 
 ```bash
-# development
+# desenvolvimento
 $ npm run start
 
-# watch mode
+# modo watch
 $ npm run start:dev
 
-# production mode
+# produção
 $ npm run start:prod
 ```
 
-## Test
+## APIs
 
-```bash
-# unit tests
-$ npm run test
+- Veículos
 
-# e2e tests
-$ npm run test:e2e
+[GET]    /veiculo 		- Lista todos os veículos
+[GET] 	 /veiculo/:id 	- Busca um Veículo por id
+[POST] 	 /veiculo 		- Cria um Veículo
+[PATCH]  /veiculo/:id 	- Edita um Veículo
+[DELETE] /veiculo/:id	- Deleta um Veículo (e seu estoque)
 
-# test coverage
-$ npm run test:cov
-```
+- Categorias
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+[GET] 	 /categorias 		- Lista todas as Categorias
+[GET] 	 /categorias/:id 	- Busca uma Categoria por id
+[POST] 	 /categorias 		- Cria uma Categoria
+[PATCH]  /categorias/:id 	- Edita uma Categoria
+[DELETE] /categorias/:id	- Deleta uma Categoria (deve atualizar o veiculo setando idCategoria como NULL para veiculos que utilizam essa categoria)
